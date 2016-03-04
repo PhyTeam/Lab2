@@ -62,12 +62,15 @@ public:
 		numVerts = 0;
 		numFaces = 0;
 	}
+	void CreateModel(float d, float R1, float R2, float fHeight);
 	void DrawWireframe();
+	void DrawPoint();
 	void DrawColor();
 
 	void CreateTetrahedron();
 	void CreateCuboid(float fSizeX, float fSizeY, float fSizeZ);
 	void CreateCylinder(int nSegment, float fHeight, float fRadius);
+	void CreateSphere(int nSlides, int nStacks, float fRadius);
 	void CreateCube(float	fSize);
 };
 

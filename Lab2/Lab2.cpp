@@ -66,7 +66,7 @@ void myDisplay()
 	else if (nChoice == 3)
 		cuboid.DrawColor();
 	else if (nChoice == 4)
-		cylinder.DrawColor();
+		cylinder.DrawPoint();
 
 	glFlush();
     glutSwapBuffers();
@@ -112,8 +112,9 @@ int main(int argc, char* argv[])
 	tetrahedron.CreateTetrahedron();
 	cube.CreateCube(1);
 	cuboid.CreateCuboid(1, 2, 3);
-	cylinder.CreateCylinder(20, 3, 1);
-
+	//cylinder.CreateCylinder(20, 3, 1);
+	//cylinder.CreateSphere(10, 10, 2);
+	cylinder.CreateModel(1, 1, .5f , 1);
 	myInit();
     glutDisplayFunc(myDisplay);
 	  
